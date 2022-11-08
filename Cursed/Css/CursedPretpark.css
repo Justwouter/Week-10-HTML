@@ -26,9 +26,10 @@ body{
     text-decoration: dotted;
 }
 footer{
-    margin: 1%;
+    margin: 10%;
     padding: 25%;
-    /* background-image: url("../Images/mydudes.jpg"); */
+    background-image: url("../Images/mydudes.jpg");
+    background-repeat: no-repeat;
     text-align: center;
     text-decoration: wavy;
     color: yellowgreen;
