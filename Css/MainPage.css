@@ -2,17 +2,17 @@
 
 body{
     background-image: url("..//Images/halloween.jpg");
-    background-repeat: no-repeat;
+    background-repeat:repeat;
 }
 
 .MainPageHeader {
 
     align-self: center;
     flex-grow: 1;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
     border-radius: 25px;
-    border: 2px solid crimson; 
+    border: 3px solid crimson; 
     background-color: crimson;
 }
 
@@ -94,6 +94,12 @@ body{
 
 .MainPageContent {
     flex-grow: 1;
+}
+
+
+.MainPageFooter {
+    display: flex;
+    position: static;
 }
 
 
