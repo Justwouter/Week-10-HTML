@@ -98,12 +98,13 @@ body{
 .MainPageContentArea {
     display: flex;
     height: 1800px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     margin: 10%;
 }
 
 .MainPageContent {
     flex-grow: 1;
+    background-color: whitesmoke;
 }
 
 
@@ -138,5 +139,53 @@ body{
     opacity:1;
   }
   
-  
+  @media (prefers-reduced-motion: no-preference) {
+    .HeaderLogo :hover{
+        animation: Image-Animation infinite 20s linear;
+    }
+  }
 
+
+  @keyframes Image-Animation {
+    from {
+      
+      /* transform: rotate(360deg); */
+      transform: rotate3d(0);
+    }
+    50%{
+      color: crimson;
+      border-color: blue;
+      transform: rotate3d(0, 1, 0.5, 3.142rad);
+  
+      
+    }
+    75%{
+    }
+    to {
+        transform: rotate3d(1,1,1,0);
+        border-radius: 25px;
+      
+  
+      /* transform: rotate(0deg); */
+    }
+  }
+  @keyframes rotate-Animation {
+	from {
+        transform: rotateY(45deg);
+        border-radius: 25%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    50%{
+        border-radius: 25%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+	to {
+        transform: rotateY(225deg);
+        border-radius: 25%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        
+    }
+}
