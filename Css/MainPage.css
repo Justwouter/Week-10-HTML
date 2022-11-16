@@ -100,11 +100,25 @@ body{
     height: 1800px;
     /* background-color: whitesmoke; */
     margin: 10%;
+    display:block
 }
 
-.MainPageContent {
-    flex-grow: 1;
-    background-color: whitesmoke;
+.MainPageContent1 {
+    display: flex;
+    background-color: green;
+}
+
+.PromoImage1 {
+    height: 10rem;
+}
+
+.MainPageContent2 {
+    display: flex;
+    background-color: blue;
+}
+
+.PromoImage2 {
+    height: 10rem;
 }
 
 
