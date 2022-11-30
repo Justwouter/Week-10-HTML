@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
 body{
-    background-image: url("..//Images/halloween.jpg");
-    background-repeat:repeat;
+    /* background-image: url("..//Images/halloween.jpg");
+    background-repeat:repeat; */
 }
 
 
@@ -101,8 +101,14 @@ body{
     display: flex;
     height: 1800px;
     /* background-color: whitesmoke; */
-    margin: 10%;
-    display:block
+    margin-left: 25%;
+    margin-right: 25%;
+    display:block;
+    background-color: whitesmoke;
+}
+
+.MainPageItem{
+    margin-top: 100px;
 }
 
 .MainPageContent1 {
@@ -112,15 +118,31 @@ body{
 
 .PromoImage1 {
     height: 10rem;
+    order: 0;
 }
 
 .MainPageContent2 {
+    text-align: left;
     display: flex;
     background-color: blue;
+    flex-direction: row-reverse;
+
 }
 
-.PromoImage2 {
+.MPContentText {
+    text-align: right;
+    align-self: right;
+    order: 1;
+    margin: 10px;
+
+}
+
+
+.MPPromoImage2 {
     height: 10rem;
+    order: 0;
+    align-self: right;
+    right: 0px;
 }
 
 
@@ -155,10 +177,15 @@ body{
     opacity:1;
   }
   
+
+  /* Animations! */
   @media (prefers-reduced-motion: no-preference) {
     .HeaderLogo :hover{
         animation: Image-Animation infinite 20s linear;
     }
+    /* .MainPageItem {
+        animation: rotate-Animation infinite 10s linear;
+    } */
   }
 
 
@@ -166,7 +193,7 @@ body{
     from {
       
       /* transform: rotate(360deg); */
-      transform: rotate3d(0);
+      transform: rotate3d(0deg);
     }
     50%{
       color: crimson;
@@ -175,10 +202,8 @@ body{
   
       
     }
-    75%{
-    }
     to {
-        transform: rotate3d(1,1,1,0);
+        transform: rotate3d(1,1,1,360deg);
         border-radius: 25px;
       
   
@@ -187,7 +212,7 @@ body{
   }
   @keyframes rotate-Animation {
 	from {
-        transform: rotateY(45deg);
+        transform: rotateY(0deg);
         border-radius: 25%;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -198,10 +223,23 @@ body{
         border-bottom-left-radius: 0;
     }
 	to {
-        transform: rotateY(225deg);
+        transform: rotateY(365deg);
         border-radius: 25%;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         
     }
 }
+
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    background-image: url("..//Images/halloween.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

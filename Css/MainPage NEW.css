@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+/* Header */
+.header-basic {
+  background-color: #f1f1f1; /* Grey background */
+  color: black;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: absolute; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+.WarpBox {
+  display: flex;
+  align-content: space-between;
+}
+
+.Header-Logo{
+  box-sizing: border-box;
+  display: flex;
+  line-height: normal;
+  position: static;
+  order: 0;
+
+}
+.Header-Logo img{
+  border-bottom: 1px solid #f1f1f1;
+
+}
+
+.MainLogoImage{
+  box-sizing: border-box;
+  display: block;
+  position: static;
+  
+}
+.Header{
+  flex-grow: 1;
+  
+}
+.header-basic ul{
+  flex-grow: 1;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+
+}
+
+.header-basic li {
+  padding:0 10px; 
+  display: inline-block;
+  
+}
+
+
+.header-basic a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  background-color: green;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+
+  /* Animations! */
+  @media (prefers-reduced-motion: no-preference) {
+    .Header-Logo :hover{
+        animation: Image-Animation infinite 20s linear;
+    }
+    /* .MainPageItem {
+        animation: rotate-Animation infinite 10s linear;
+    } */
+  }
+
+
+  @keyframes Image-Animation {
+    from {
+      
+      /* transform: rotate(360deg); */
+      transform: rotate3d(0deg);
+    }
+    50%{
+      color: crimson;
+      border-color: blue;
+      transform: rotate3d(0, 1, 0.5, 3.142rad);
+  
+      
+    }
+    to {
+        transform: rotate3d(1,1,1,360deg);
+        border-radius: 25px;
+      
+  
+      /* transform: rotate(0deg); */
+    }
+  }
+  @keyframes rotate-Animation {
+	from {
+        transform: rotateY(0deg);
+        border-radius: 25%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    50%{
+        border-radius: 25%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+	to {
+        transform: rotateY(365deg);
+        border-radius: 25%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        
+    }
+}
+
+body, html {
+    height: 100%;
+  }
+  
+  .parallax {
+    background-image: url("..//Images/halloween.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
