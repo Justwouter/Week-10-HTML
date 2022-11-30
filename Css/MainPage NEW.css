@@ -20,31 +20,37 @@
 
 .Header-Logo{
   box-sizing: border-box;
-  display: flex;
   line-height: normal;
   position: static;
   order: 0;
 
 }
-.Header-Logo img{
+#Header-Logo-Link{
   border-bottom: 1px solid #f1f1f1;
-
+  padding: 0;
+  margin: 0;
+  background-color: green;
+  
 }
 
 .MainLogoImage{
   box-sizing: border-box;
   display: block;
   position: static;
+  width: auto;
   
 }
+
+
 .Header{
   flex-grow: 1;
   
 }
 .header-basic ul{
+
   flex-grow: 1;
   list-style:none;
-  text-align:center;
+  text-align:right;
   font-size:18px;
   line-height:1.6;
   margin-bottom:0;
@@ -58,7 +64,7 @@
 }
 
 
-.header-basic a {
+.Header a {
   color:inherit;
   text-decoration:none;
   opacity:0.8;
@@ -87,7 +93,7 @@
 /* Footer */
 .footer-basic {
     padding:40px 0;
-    background-color:#ffffff;
+    background-color: whitesmoke;
     color:#4b4c4d;
     bottom: 0;
     left: 0;
@@ -139,7 +145,7 @@
     }
     50%{
       color: crimson;
-      border-color: blue;
+      /* border-color: blue; */
       transform: rotate3d(0, 1, 0.5, 3.142rad);
   
       
