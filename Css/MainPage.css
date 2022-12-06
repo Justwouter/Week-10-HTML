@@ -12,12 +12,17 @@ body{
 
     /* align-self: center; */
     flex-grow: 1;
-    margin-left: 15%;
-    margin-right: 15%;
+    /* margin-left: 15%;
+    margin-right: 15%; */
     border-radius: 25px;
     border: 3px solid crimson; 
     background-color: crimson;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    left: 50%;
+    margin-left: -500px;
 }
 
 .HeaderRow{
@@ -60,11 +65,14 @@ body{
     position: relative;
     
 }
+.MainNavRow{
+    flex-grow: 1;
+}
 
 .NavElements{
     display: flex;
     position: relative;
-    text-align: center;
+    text-align: right;
 
 }
 
@@ -96,13 +104,18 @@ body{
     box-shadow: inset 300px 0 0 0 #54b3d6;;
 }
 
+
+
+
+
 /* Main content space */
 .MainPageContentArea {
     display: flex;
     height: 1800px;
-    /* background-color: whitesmoke; */
+    margin-top: 10%;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 5%;
     display:block;
     background-color: whitesmoke;
 }
@@ -144,6 +157,10 @@ body{
     align-self: right;
     right: 0px;
 }
+
+
+
+
 
 
 

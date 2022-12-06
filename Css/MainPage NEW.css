@@ -45,13 +45,14 @@
 
 .Header{
   flex-grow: 1;
-  
+  display: flex;  
+  flex-direction: column;
+
 }
 .header-basic ul{
-
   flex-grow: 1;
   list-style:none;
-  text-align:right;
+  text-align:center;
   font-size:18px;
   line-height:1.6;
   margin-bottom:0;
@@ -59,18 +60,24 @@
 }
 
 .header-basic li {
+  height: 100%;  
   padding:0 10px; 
   display: inline-block;
-  
+  background-color: aqua;
+  text-decoration: none;
+  text-align:center;
 }
 
 
 .Header a {
+  text-align:center;
   color:inherit;
   text-decoration:none;
   opacity:0.8;
-  background-color: green;
+}
 
+#Item-Right{
+  text-align:right;
 }
 
 
