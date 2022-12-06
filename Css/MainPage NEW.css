@@ -23,10 +23,11 @@
   line-height: normal;
   position: static;
   order: 0;
+  
 
 }
 #Header-Logo-Link{
-  border-bottom: 1px solid #f1f1f1;
+  
   padding: 0;
   margin: 0;
   background-color: green;
@@ -37,7 +38,7 @@
   box-sizing: border-box;
   display: block;
   position: static;
-  width: auto;
+  
   
 }
 
@@ -139,7 +140,6 @@
 
   @keyframes Image-Animation {
     from {
-      
       /* transform: rotate(360deg); */
       transform: rotate3d(0deg);
     }
@@ -147,14 +147,9 @@
       color: crimson;
       /* border-color: blue; */
       transform: rotate3d(0, 1, 0.5, 3.142rad);
-  
-      
     }
     to {
         transform: rotate3d(1,1,1,360deg);
-        border-radius: 25px;
-      
-  
       /* transform: rotate(0deg); */
     }
   }
