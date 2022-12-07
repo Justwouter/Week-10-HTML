@@ -21,8 +21,11 @@
     position: fixed;
     top: 0;
     text-align: center;
+    /* These three lines center the navbar.
+       This took so damn long... */
     left: 50%;
-    margin-left: -500px;
+    margin-right: -50%;
+    transform: translate(-50%, -0%);
 }
 
 .HeaderRow{
