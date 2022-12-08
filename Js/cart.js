@@ -46,5 +46,14 @@ function createsummary() {
     totalprice.textContent = "€" + localStorage.getItem("sum");
     let totalitems = document.getElementById("totalitems");
     totalitems.textContent = parseInt(localStorage.getItem("count")) + " Items";
+    debugcart()
+}
+
+function debugcart(){
+    console.log(typeof localStorage.getItem("sum"))
+    console.log(localStorage.getItem("sum"))
+    console.log(typeof localStorage.getItem("count"))
+    console.log(localStorage.getItem("count"))
+
 }
 export default updateTable;
