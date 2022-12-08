@@ -253,7 +253,7 @@
 
 body, html {
     height: 100%;
-  }
+}
   
   .parallax {
     background-image: url("..//Images/halloween.jpg");
@@ -262,4 +262,4 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
