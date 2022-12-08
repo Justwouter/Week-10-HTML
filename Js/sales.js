@@ -56,7 +56,7 @@ function add(event) {
 
 // Updates the values displayed on the page and in the device storage to the values currently in the script.
 function updateCart() {
-    document.getElementById("totalprice").textContent = totalprice;
+    document.getElementById("priceincart").textContent = totalprice;
     document.getElementById("itemsincart").textContent = itemsincart;
     localStorage.setItem("sum", totalprice);
     localStorage.setItem("count", itemsincart);
