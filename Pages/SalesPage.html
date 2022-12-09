@@ -15,7 +15,7 @@
     <link rel="icon" type="image/x-icon" href="../Images/gary.ico">
     <title>MyPretpark</title>
     <script language="javascript" type="module" src="..//Js/sales.js" defer></script>
-
+    <script language="javascript" src="..//Js/weatherforecast.js" defer></script>
 </head>
 
 <body class="parallax">
@@ -74,8 +74,8 @@
             </div>
         </div>
 
-        <!-- Cart tabel -->
-        <div>
+        <!-- Cart table -->
+        <div class="cart">
             <table>
                 <thead>
                     <tr>
@@ -96,7 +96,14 @@
             </table>
         </div>
         <button id="Nukecart">Remove all items</button>
-
+        <!-- WeatherForecast -->
+        <div class="WeatherStation">
+            <table>
+                <tbody id="weeklyweather">
+                </tbody>
+            </table>
+            
+        </div>
     </div>
 
     <!-- Footer -->
