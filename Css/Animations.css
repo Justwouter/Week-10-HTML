@@ -1,0 +1,52 @@
+
+
+
+
+
+
+@keyframes weathershake {
+    0% {
+     -webkit-transform:rotate(0);
+     transform:rotate(0)
+    }
+    10% {
+     -webkit-transform:rotate(-50deg);
+     transform:rotate(-50deg)
+    }
+    20% {
+     -webkit-transform:rotate(25deg);
+     transform:rotate(25deg)
+    }
+    30% {
+     -webkit-transform:rotate(-16.6666666667deg);
+     transform:rotate(-16.6666666667deg)
+    }
+    40% {
+     -webkit-transform:rotate(12.5deg);
+     transform:rotate(12.5deg)
+    }
+    50% {
+     -webkit-transform:rotate(-10deg);
+     transform:rotate(-10deg)
+    }
+    60% {
+     -webkit-transform:rotate(8.3333333333deg);
+     transform:rotate(8.3333333333deg)
+    }
+    70% {
+     -webkit-transform:rotate(-7.1428571429deg);
+     transform:rotate(-7.1428571429deg)
+    }
+    80% {
+     -webkit-transform:rotate(6.25deg);
+     transform:rotate(6.25deg)
+    }
+    90% {
+     -webkit-transform:rotate(-5.5555555556deg);
+     transform:rotate(-5.5555555556deg)
+    }
+    to {
+     -webkit-transform:rotate(0);
+     transform:rotate(0)
+    }
+   }

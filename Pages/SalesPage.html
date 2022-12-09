@@ -19,6 +19,7 @@
 </head>
 
 <body class="parallax">
+    <!-- Header -->
     <header class="MainPageHeader">
         <div class="HeaderRow">
             <a class="HeaderLogo" href="../Pages/MainPage.html">
@@ -33,10 +34,10 @@
                                 <a class="NavListLink" href="../Pages/MainPage.html">Home</a>
                             </li>
                             <li class="NavListItem">
-                                <a class="NavListLink" href="..//Pages/AboutUs.html">Informatie</a>
+                                <a class="NavListLink" href="../Pages/AboutUs.html">Informatie</a>
                             </li>
                             <li class="NavListItem">
-                                <a class="NavListLink" href="..//Pages/SalesPage.html">Koop Kaartjes</a>
+                                <a class="NavListLink" href="../Pages/SalesPage.html">Koop Kaartjes</a>
                             </li>
                         </ul>
                     </nav>
@@ -44,35 +45,32 @@
             </div>
         </div>
     </header>
+
+    <!-- Page Content -->
     <div class="MainPageContentArea">
-        <div class="toolbar">
-            <h1 class="brand">Shop</h1>
-            <p>
-                <a href="..//Testing/TestingSales.html">
-                    Cart items:
-                    <span id="itemsincart">0</span>, Price:
-                    <span id="priceincart">0</span>
-                </a>
-            </p>
-        </div>
         <!-- Kaartverkoop buttons -->
         <div class="Kaartjes">
             <div class="Kaartje">
                 <h4>Kinderen</h4>
                 <p>€2,50</p>
-                <button data-id="1" data-price="2000" data-name="Product one">Voeg toe</button>
+                <button class="addition" data-id="1" data-price="2.5" data-name="Kinder Kaartje">+</button>
+                <button class="subtraction" data-id="1" data-name="Product one">-</button>
+            </div>
+
+
+            <div class="Kaartje">
+                <h4>Volwassenen</h4>
+                <p>€5,00</p>
+                <button class="addition" data-id="2" data-price="5" data-name="Kaartje">+</button>
+                <button class="subtraction" data-id="2" data-name="Product two">-</button>
+
             </div>
 
             <div class="Kaartje">
-                <h3>Volwassenen</h3>
-                <p>Price: 3000</p>
-                <button data-id="2" data-price="3000" data-name="Product two">Voeg toe</button>
-            </div>
-
-            <div class="Kaartje">
-                <h3>Bejaarden</h3>
-                <p>Price: 6000</p>
-                <button data-id="3" data-price="6000" data-name="Product three">Voeg toe</button>
+                <h4>Bejaarden</h4>
+                <p>€10,00</p>
+                <button class="addition" data-id="3" data-price="10" data-name="Senioren Kaartje">+</button>
+                <button class="subtraction" data-id="3" data-name="Product three">-</button>
             </div>
         </div>
 
@@ -81,25 +79,26 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>amount</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="tbody">
                 </tbody>
                 <thead>
                     <tr>
-                        <th>Total:</th>
-                        <th id="totalprice">€0</th>
+                        <th>Totaal:</th>
                         <th id="totalitems">0</th>
+                        <th id="totalprice">€0</th>
                     </tr>
                 </thead>
             </table>
         </div>
-        
+
     </div>
 
+    <!-- Footer -->
     <div class="footer-basic">
         <footer>
             <!-- Stuk netter dan de header -->
