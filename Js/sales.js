@@ -4,8 +4,6 @@ let itemsincart = 0;
 let totalprice = 0;
 let cart = {};
 
-//localStorage.clear(); //If something corrupts the storage again, use this
-
 //If the values exist, load them from the device storage.
 if (localStorage.getItem("count")) {
     itemsincart = parseInt(localStorage.getItem("count"));
@@ -23,18 +21,24 @@ updateCart();
 
 // Add a click event for the add buttons.
 let buttons = document.querySelectorAll(".Kaartjes .addition ");
-
 for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i];
     button.addEventListener("click", add);
 }
 
 buttons = document.querySelectorAll(".Kaartjes .subtraction ");
-
 for (let i = 0; i < buttons.length; i++) {
     let button = buttons[i];
     button.addEventListener("click", remove);
 }
+
+buttons = document.querySelectorAll("#Nukecart ");
+for (let i = 0; i < buttons.length; i++) {
+    let button = buttons[i];
+    button.addEventListener("click", NukeIt);
+}
+
+
 
 // Actual logic for the addition event. If an object doesn't exist, make one.
 function add(event) {
@@ -67,30 +71,39 @@ function remove(event) {
 
     if (id in cart) {
         let price = cart[id].price;
-        if(cart[id].amount > 0){
+        if (cart[id].amount > 0) {
             cart[id].amount--;
             itemsincart--;
             totalprice -= price;
         }
-        if(cart[id].amount == 0){
+        if (cart[id].amount == 0) {
             delete cart[id]
         }
-        
         localStorage.setItem("cart", JSON.stringify(cart));
         updateCart();
     }
     else {
         console.log("No element with id " + id)
     }
+}
 
-
+function NukeIt() {
+    // Manually remove all items and values and for good measure delete the storage
+    for (let id in cart) {
+        let item = cart[id];
+        itemsincart -= item.amount;
+        totalprice -= item.amount * item.price;
+        delete cart[id]
+    }
+    totalprice = 0;
+    itemsincart = 0;
+    localStorage.clear();
+    updateCart();
 }
 
 
 // Updates the total items/price displayed on the page and in the device storage to the values currently in the script.
 function updateCart() {
-    //document.getElementById("priceincart").textContent = totalprice;
-    //document.getElementById("itemsincart").textContent = itemsincart;
     localStorage.setItem("sum", totalprice);
     localStorage.setItem("count", itemsincart);
     updateTable()

@@ -47,11 +47,5 @@ function createsummary() {
     totalitems.textContent = parseInt(localStorage.getItem("count")) + " Items";
 }
 
-function debugcart(){
-    console.log(typeof localStorage.getItem("sum"))
-    console.log(localStorage.getItem("sum"))
-    console.log(typeof localStorage.getItem("count"))
-    console.log(localStorage.getItem("count"))
 
-}
 export default updateTable;
